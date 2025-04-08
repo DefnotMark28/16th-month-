@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Monthsary</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #ffccd5, #ffe6eb);
+      color: #5c1a33;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px 20px;
+    }
+
+    header {
+      font-size: 2.5em;
+      font-weight: bold;
+      margin-bottom: 10px;
+      text-shadow: 2px 2px #ffd6df;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin: 20px 0 40px 0;
+    }
+
+    nav button {
+      color: #ffffff;
+      background: linear-gradient(135deg, #ff5e78, #ff9aad);
+      padding: 10px 15px;
+      border-radius: 12px;
+      font-weight: bold;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: all 0.3s ease;
+      border: none;
+      cursor: pointer;
+    }
+
+    nav button:hover {
+      background: linear-gradient(135deg, #ff2e51, #ff7b92);
+      transform: translateY(-2px);
+    }
+
+    .content {
+      text-align: center;
+      max-width: 700px;
+      background-color: rgba(255, 255, 255, 0.4);
+      padding: 25px;
+      border-radius: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      position: relative;
+      z-index: 5;
+    }
+
+    .content p {
+      font-size: 1.5em;
+      line-height: 1.8;
+      font-weight: 600;
+    }
+
+    .carousel-container {
+      position: fixed;
+      bottom: 30px;
+      width: 80%;
+      margin: 0 auto;
+      border-radius: 15px;
+      overflow: hidden;
+      z-index: 1;
+      display: flex;
+      justify-content: center;
+    }
+
+    .carousel-images {
+      display: flex;
+      transition: transform 1s ease-in-out;
+    }
+
+    .carousel-images img {
+      width: 60%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 15px;
+      border: 5px solid #fff;
+      margin: 0 5px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      margin-top: 50px;
+      font-size: 0.9em;
+      color: #a7526d;
+    }
+  </style>
+</head>
+<body>
+  <header>Our Monthsary Journey</header>
+
+  <nav>
+    <button onclick="showMessage(1)">Month 1</button>
+    <button onclick="showMessage(2)">Month 2</button>
+    <button onclick="showMessage(3)">Month 3</button>
+    <button onclick="showMessage(4)">Month 4</button>
+    <button onclick="showMessage(5)">Month 5</button>
+    <button onclick="showMessage(6)">Month 6</button>
+    <button onclick="showMessage(7)">Month 7</button>
+    <button onclick="showMessage(8)">Month 8</button>
+    <button onclick="showMessage(9)">Month 9</button>
+    <button onclick="showMessage(10)">Month 10</button>
+    <button onclick="showMessage(11)">Month 11</button>
+    <button onclick="showMessage(12)">Month 12</button>
+    <button onclick="showMessage(13)">Month 13</button>
+    <button onclick="showMessage(14)">Month 14</button>
+    <button onclick="showMessage(15)">Month 15</button>
+    <button onclick="showMessage(16)">Month 16</button>
+  </nav>
+
+  <div class="content">
+    <p id="message">Click a month to see our special message 💌</p>
+  </div>
+
+  <!-- Carousel container, always visible at the bottom -->
+  <div class="carousel-container">
+    <div id="carousel" class="carousel-images">
+      <!-- Replace these image URLs with your actual images -->
+      <img src="image1.jpg" alt="Carousel Image 1">
+      <img src="image2.jpg" alt="Carousel Image 2">
+      <img src="image3.jpg" alt="Carousel Image 3">
+      <img src="image4.jpg" alt="Carousel Image 4">
+      <img src="image5.jpg" alt="Carousel Image 5">
+      <img src="image6.jpg" alt="Carousel Image 6">
+      <img src="image7.jpg" alt="Carousel Image 7">
+      <img src="image8.jpg" alt="Carousel Image 8">
+      <img src="image9.jpg" alt="Carousel Image 9">
+      <img src="image10.jpg" alt="Carousel Image 10">
+      <img src="image11.jpg" alt="Carousel Image 11">
+      <img src="image12.jpg" alt="Carousel Image 12">
+      <img src="image13.jpg" alt="Carousel Image 13">
+      <img src="image14.jpg" alt="Carousel Image 14">
+      <img src="image15.jpg" alt="Carousel Image 15">
+      <img src="image16.jpg" alt="Carousel Image 16">
+    </div>
+  </div>
+
+  <footer>
+    Made with 💖 for us.
+  </footer>
+
+
+  <script>
+    const messages = {
+      1: {
+        message: `Happy 1st month, my love! It feels like just yesterday we were starting this beautiful journey together. Each moment has been more amazing than the last, and in just one month, you've brought so much joy into my life. Every conversation, every laugh, every quiet moment together has made me realize how much I cherish you. I can't help but smile when I think about how lucky I am to have found you. You're not just my partner; you're my best friend, my confidant, my everything. Thank you for being exactly who you are and for filling my heart with so much love.
+
+        As we celebrate this special day, I want you to know how deeply I care about you. This first month together is just the beginning, and I can already feel how strong and beautiful our bond is. I'm excited for all the adventures, laughter, and love that lie ahead. I can't wait to continue building memories with you, because every day with you feels like a gift. Happy 1st Month, my love, and here’s to many, many more to come.`,
+      },
+      2: {
+        message: `Month 2: Every day with you feels like a new chapter of an incredible story. Our second month together has been filled with unforgettable moments, and every day, I fall more in love with you. From our late-night talks to the simple yet meaningful gestures, everything about our time together has made me realize how much you mean to me. You make my world brighter, and I’m so grateful for your love. I didn’t know it was possible to feel so happy, so at peace, and so cherished until I met you.
+
+        In just two months, we’ve created memories that I will treasure forever. Your smile, your laughter, and the warmth of your presence are what get me through each day. I love how we fit together so effortlessly, like two pieces of a perfect puzzle. There’s no one else I’d rather share these moments with, and I can’t wait to see where this journey takes us. Here's to our second month, my love. I can't wait for all the months and years ahead of us.`,
+      },
+      3: {
+        message: `Month 3: Three months together—time has flown by, but every single second has been a treasure. As we reach this milestone, I look back on the memories we’ve made and feel nothing but gratitude for you. From our small, quiet moments to the exciting adventures, being with you has been more wonderful than I could have ever imagined. I love how we’ve grown together, learning from each other, supporting each other, and sharing a love that gets stronger each day. You are the most amazing person I know, and I am so incredibly lucky to have you by my side.
+
+        Looking back on these three months, I realize that what we have is truly special. There’s no one I’d rather go through life with, and every day I’m more thankful that I get to share my heart with you. You make me feel seen, loved, and understood in ways that I never knew were possible. Our journey is just beginning, and I’m excited for the many more months and years we’ll share. I love you so much, and I can’t wait to continue this beautiful adventure with you.`,
+      },
+      4: {
+        message: `Month 4: Four months together—it's incredible how quickly time flies when you're with someone as amazing as you. Every day with you feels like a new adventure, and I treasure each moment we spend together. In these four months, we’ve learned so much about each other and our connection has only grown stronger. You’ve been my rock, my support, and the one who makes my heart skip a beat. I love how we can talk about anything, laugh about the silliest things, and just be ourselves around each other.
+
+        Every day with you feels like a gift, and I’m excited to continue building our beautiful relationship. I can’t wait for all the new memories we’ll make together, and I’m so grateful for the love and happiness you bring into my life. Here’s to our fourth month, my love, and many more to come.`,
+      },
+      5: {
+        message: `Month 5: Half a year together—can you believe it? The time has flown by, and I can honestly say that I’ve never been happier. Every day with you is a blessing, and I love how we’ve grown as a couple. From the big moments to the small, quiet times, everything with you feels special. I’m so thankful for the way you make me feel, how you always know how to make me laugh, and how we support each other through everything.
+
+        Five months may seem like a long time, but when I think of all we’ve been through and all we’ve shared, it feels like just the beginning. I can’t wait to see what the next five months and beyond will bring us. Thank you for being you—my everything.`,
+      },
+      6: {
+        message: `Month 6: Six months down, a lifetime to go! Can you believe how much we’ve experienced together in such a short time? These six months have been filled with love, laughter, and incredible memories, and I wouldn’t change a thing. We’ve faced challenges, celebrated victories, and made so many amazing memories along the way. Through it all, I’m so grateful to have you by my side. You’re my best friend, my confidant, and the love of my life.
+
+        I can’t wait to see what the next six months bring us, and I know that as long as we’re together, we’ll keep growing, laughing, and loving each other more every single day. I love you more than words can say.`,
+      },
+      7: {
+        message: `Month 7: Seven months, and every day with you feels like a dream come true. Our journey together has been nothing short of magical, and as I look back on everything we’ve shared, I can’t help but feel incredibly grateful. From the adventures we’ve had to the quiet, intimate moments we’ve shared, every second with you is a gift.
+
+        You’ve taught me so much about love, patience, and understanding, and I’m so thankful to have you in my life. I can’t wait for the many more months and years ahead of us. I love you so much, and I’m excited for everything the future holds for us.`,
+      },
+      8: {
+        message: `Month 8: Eight months together, and it feels like no time has passed at all. But when I think of all the memories we’ve created, I can’t help but feel so proud of our relationship. We’ve faced challenges and celebrated so many victories, and through it all, we’ve only grown stronger. I love how we can always rely on each other and how we make each other better every single day.
+
+        You make my life so much brighter, and I can’t imagine a future without you in it. Here’s to our eighth month, my love, and to many more months and years of happiness together.`,
+      },
+      9: {
+        message: `Month 9: Nine months down, and it feels like we’ve been together for a lifetime. Every day with you is a reminder of how special you are to me. You make my world better in every way, and I’m so thankful for everything you do and everything you are. Our connection is something truly special, and I feel so lucky to have you in my life.
+
+        As we celebrate this milestone, I can’t help but look forward to all the adventures and memories still to come. I love you more than ever, and I can’t wait to see what the next chapter of our journey holds.`,
+      },
+      10: {
+        message: `Month 10: Ten months of love, laughter, and unforgettable memories. These ten months have been filled with so many beautiful moments, and I cherish every one of them. I love how we’ve grown together, how we’ve supported each other, and how we continue to build a love that is stronger every day.
+
+        I’m so thankful for the way you make me feel, for the way you always know just what to say, and for the happiness you bring into my life. Ten months may seem like a lot, but I know it’s just the beginning. I can’t wait for the many more months and years we have ahead of us.`,
+      },
+      11: {
+        message: `Month 11: Eleven months, and I feel more in love with you than ever. These months together have been nothing short of magical, and I am beyond grateful for all the experiences we’ve shared. From our silly moments to our deepest conversations, every second with you is something I treasure.
+
+        I look back at all we’ve accomplished and the memories we’ve made, and I can’t help but feel excited for everything still to come. You make my life better in ways I never knew were possible, and I can’t wait to continue this beautiful journey with you by my side.`,
+      },
+      12: {
+        message: `Month 12: Twelve months—one whole year together, and I feel so incredibly lucky to have you by my side. This year has been filled with laughter, love, and countless memories that I will cherish forever. Through all the highs and lows, we’ve been there for each other, and our bond has only grown stronger.
+
+        I am so proud of everything we’ve accomplished together and can’t wait to see what the next year brings. With you, I know the best is yet to come. Here’s to one year of love, and to many more years of happiness and memories.`,
+      },
+      13: {
+        message: `Month 13: Thirteen months together, and it feels like we’ve been on this incredible journey forever. Every moment with you is a gift, and I’m so grateful for all the memories we’ve made. We’ve been through so much together, and each experience has only strengthened our love.
+
+        I can’t wait for all the new adventures that lie ahead, and I’m so excited to see where life takes us. Here’s to another amazing month with you, my love, and to all the months and years ahead.`,
+      },
+      14: {
+        message: `Month 14: Fourteen months of laughter, love, and everything in between. Every day with you is an adventure, and I feel so fortunate to have you in my life. We’ve been through so much together, and our bond has only grown stronger with time. I love how we continue to support and encourage each other in everything we do.
+
+        I’m excited for all the beautiful moments that are yet to come, and I know that no matter what, we’ll face everything together. Here's to fourteen months of love and many more to come.`,
+      },
+      15: {
+        message: `Month 15: Fifteen months, and our love continues to grow in ways I never imagined. Every moment with you has been filled with so much joy and meaning, and I am beyond thankful for all that you are. We’ve had our ups and downs, but through it all, we’ve remained strong together.
+
+        I can’t wait for the many more months and years we’ll have together. Thank you for being my everything and making every day so special.`,
+      },
+      16: {
+        message: `Month 16: Sixteen months of love, laughter, and memories that I will cherish forever. Every day with you is a reminder of how incredibly lucky I am to have you by my side. Our bond is something truly special, and I’m so thankful for everything we’ve shared so far.
+
+        As we look to the future, I know that the best is yet to come. Here’s to sixteen months of love, and to all the amazing adventures still ahead of us.`,
+      },
+    };
+     function showMessage(month) {
+      const msg = messages[month];
+      document.getElementById("message").textContent = msg.message;
+    }
+
+    let currentIndex = 0;
+
+    // Automatic image sliding function for carousel
+    function slideImages() {
+      const carousel = document.getElementById("carousel");
+      setInterval(() => {
+        currentIndex = (currentIndex + 1) % 16; // Change image every 3 seconds (for 16 images)
+        carousel.style.transition = "none";  // Disable transition to prevent jumping
+        carousel.style.transform = `translateX(${-currentIndex * 100}%)`;
+        
+        // Wait a little before enabling transition again
+        setTimeout(() => {
+          carousel.style.transition = "transform 1s ease-in-out"; // Re-enable transition
+        }, 100);
+      }, 3000);
+    }
+
+    // Start the image sliding once the page loads
+    window.onload = slideImages;
+  </script>
+</body>
+</html>
